@@ -12,8 +12,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
-from .predict import predict_stock
-from .roboAdvisor import robo_advisor_logic
+from predict import predict_stock
+from roboAdvisor import robo_advisor_logic
 
 app = FastAPI()
 
