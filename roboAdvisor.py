@@ -21,9 +21,9 @@ def calculate_score(user):
 
 
 def get_profile(score):
-    if score <= 40:
+    if score <= 110:
         return "Conservative"
-    elif score <= 70:
+    elif score <= 180:
         return "Moderate"
     else:
         return "Aggressive"

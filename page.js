@@ -15,7 +15,7 @@ export default function PredictPage() {
     setResult(null);
 
     try {
-      const res = await fetch(`http://localhost:8000/predict?stock=${stock}`);
+      const res = await fetch(`https://projek-ihsg-production.up.railway.app/predict?stock=${stock}`);
       const data = await res.json();
       setResult(data);
     } catch (err) {

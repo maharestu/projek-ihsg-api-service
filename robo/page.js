@@ -32,7 +32,7 @@ export default function RoboAdvisorPage() {
     setResult(null);
 
     try {
-      const res = await fetch("http://localhost:8000/robo-advisor", {
+      const res = await fetch("https://projek-ihsg-production.up.railway.app/robo-advisor", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
