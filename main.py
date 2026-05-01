@@ -38,7 +38,7 @@ def robo(user: UserProfile):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aksara.techsoft.my.id"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
